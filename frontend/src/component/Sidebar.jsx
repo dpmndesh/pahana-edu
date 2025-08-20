@@ -12,7 +12,7 @@ const Sidebar = () => {
 
   return (
     <div className="sidebar">
-      <h1 className="ims">IMS</h1>
+      <h1 className="ims">PAHANA</h1>
       <ul className="nav-links">
         {isAuth && (
           <li>
@@ -40,7 +40,7 @@ const Sidebar = () => {
 
         {isAdmin && (
           <li>
-            <Link to="/supplier">Supplier</Link>
+            <Link to="/supplier">Customer</Link>
           </li>
         )}
 

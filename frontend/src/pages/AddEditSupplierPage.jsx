@@ -44,11 +44,11 @@ const AddEditSupplierPage = () => {
     try {
       if (isEditing) {
         await ApiService.updateSupplier(supplierId, supplierData);
-        showMessage("Supplier Edited succesfully");
+        showMessage("Customer Edited succesfully");
         navigate("/supplier")
       } else {
         await ApiService.addSupplier(supplierData);
-        showMessage("Supplier Added succesfully");
+        showMessage("Customers Added succesfully");
         navigate("/supplier")
       }
     } catch (error) {
@@ -71,11 +71,11 @@ const AddEditSupplierPage = () => {
     <Layout>
       {message && <div className="message">{message}</div>}
       <div className="supplier-form-page">
-        <h1>{isEditing ? "Edit Supplier" : "Add Supplier"}</h1>
+        <h1>{isEditing ? "Edit Customer" : "Add Customer"}</h1>
 
         <form onSubmit={handleSubmit}>
           <div className="form-group">
-            <label>Supplier Name</label>
+            <label>Customers Name</label>
             <input
               value={name}
               onChange={(e) => setName(e.target.value)}
@@ -104,7 +104,7 @@ const AddEditSupplierPage = () => {
             />
           </div>
           <button type="submit">
-            {isEditing ? "Edit Supplier" : "Add Supplier"}
+            {isEditing ? "Edit Customer" : "Add Customer"}
           </button>
         </form>
       </div>

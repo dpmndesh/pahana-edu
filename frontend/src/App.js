@@ -24,7 +24,7 @@ function App() {
         <Route path="/login" element={<LoginPage/>}/>
 
         {/* ADMIN ROUTES */}
-        <Route path="/category" element={<AdminRoute element={<CategoryPage/>}/>}/>
+          <Route path="/category" element={<AdminRoute element={<CategoryPage/>}/>}/>
         <Route path="/supplier" element={<AdminRoute element={<SupplierPage/>}/>}/>
         <Route path="/add-supplier" element={<AdminRoute element={<AddEditSupplierPage/>}/>}/>
         <Route path="/edit-supplier/:supplierId" element={<AdminRoute element={<AddEditSupplierPage/>}/>}/>

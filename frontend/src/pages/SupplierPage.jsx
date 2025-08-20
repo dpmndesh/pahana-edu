@@ -57,9 +57,9 @@ return(
         {message && <div className="message">{message}</div>}
         <div className="supplier-page">
             <div className="supplier-header">
-                <h1>Suppliers</h1>
+                <h1>Customers</h1>
                 <div className="add-sup">
-                    <button onClick={()=> navigate("/add-supplier")} >Add Supplier</button>
+                    <button onClick={()=> navigate("/add-supplier")} >Add Customer</button>
                 </div>
             </div>
         </div>
