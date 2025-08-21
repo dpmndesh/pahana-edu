@@ -87,9 +87,10 @@ const ProductPage = () => {
                   className="product-image"
                   src={product.imageUrl}
                   alt={product.name}
+                  style={{ width: '100%', height: '400px' }}
                 />
 
-                <div className="product-info">
+                  <div className="product-info">
                     <h3 className="name">{product.name}</h3>
                     <p className="sku">Sku: {product.su}</p>
                     <p className="price">Price: {product.price}</p>
