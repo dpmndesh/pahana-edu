@@ -34,7 +34,7 @@ public class ProductServiceImpl implements ProductService {
     private static final String IMAGE_DIRECTORY = System.getProperty("user.dir") + "/product-images/";
 
     //AFTER YOUR FRONTEND IS SETUP CHANGE THE IMAGE DIRECTORY TO YHE FRONTEND YOU ARE USING
-    private static final String IMAGE_DIRECTORY_2 = "products/";
+    private static final String IMAGE_DIRECTORY_2 = "D:/IntelliJ/Pahana EDU/frontend/public/products/";
 
     @Override
     public Response saveProduct(ProductDTO productDTO, MultipartFile imageFile) {
